@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+</head>
+<body>
+    <header class="header">
+        <a href="#home" class="logo" > Palesa <span>Radebe</span></a>
+
+        <i class="bx bx-menu" id="menu-icon"></i>
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <section class="home" id="home">
+
+        <div class="home-content">
+            <h1>Hi there , I'm <span>Palesa</span></h1>
+            <h3>An Aspiring <span>Software Developer</span> and a <span>Data Enthusiast</span></h3>
+            <p>I love turning ideas into reality through code. 
+                From building beautiful websites to analyzing data with tools like SQL, Excel, and Power BI.
+                 I'm constantly learning and creating.</p>
+
+                 <div class="social-icons">
+                    <a href="https://github.com/Palesa-ops">
+                        <i class="bx bxl-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/palesa-radebe-5330232a9/">
+                        <i class="bx bxl-linkedin-square"></i>
+                    </a>
+                 </div>
+                 <div class="btn-group">
+                    <a href="#contact" class="btn">Hire</a>
+                    <a href="#contact" class="btn">Contact</a>
+                 </div>
+        </div>
+
+        <div class="home-img">
+            <img src="Image.jpg" alt="">
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="Image.jpg" alt="">
+        </div>
+
+        <div class="about-content">
+            <h2>More About <span>Me</span></h2>
+            <p id="short-text">I'm a passionate and self-taught software developer with a growing interest in data analytics. 
+               Even though I don’t have professional experience yet, I’ve built hands-on projects and I’m currently developing a donation platform to support children with disabilities , inspired by a boy who lived on the streets with his mom that had down syndrome as well as hydrocephalus. 
+               I’m constantly learning, improving, and exploring new technologies. I'm also diving into data tools like Excel, Power BI, Tableau, and SQL to sharpen my analytical skills and turn insights into impactful decisions. 
+               I'm eager to join a team where I can contribute, grow, and turn ideas into real-world solutions.</p>
+
+               <p id="more-text" style="display: none;">Even though I am a self-taught software developer I have a full passion for building meaningful solutions and a growing skillset in data analytics as well.
+                  I’ve created real-world projects like a weather app, a coffee shop website, and a donation platform for children with disabilities — each one teaching me to write clean code, solve problems, and think creatively.
+                  I'm continuously expanding my knowledge in front-end technologies and data tools like Excel, SQL, Power BI, and Tableau to turn data into powerful insights. 
+                  What drives me is the opportunity to make a difference through technology.
+                  I'm excited to join a team where I can grow, collaborate, and contribute to impactful work from day one.</p>
+
+               <a href="#" class="btn"  onclick="toggleReadMore(event)">Read More</a>
+
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <h2 class="heading">Services I Offer</h2>
+
+        <div class="services-container">
+            <div class="service-box">
+                <div class="service-info">
+                    <i class="bx bxs-devices"></i>
+                    <h4>Web Development</h4>
+                    <p>I specialize in creating modern, responsive, and user-friendly websites using HTML, CSS, and JavaScript.
+                       Whether it's a simple landing page, a personal portfolio, or a full-featured website for a small business, I bring designs to life with clean code and attention to detail.
+                       I focus on building visually appealing sites that not only look great but also provide a smooth and accessible user experience across all devices. 
+                       My goal is to help individuals and organizations make a strong impression online.</p>
+                </div>
+            </div>
+
+            <div class="service-box">
+                <div class="service-info">
+                    <i class="bx bxs-devices"></i>
+                    <h4>Frontend Development</h4>
+                    <p>I specialize in crafting engaging, responsive, and accessible user interfaces using HTML, CSS, and JavaScript.
+                       My focus is on creating websites that not only look great but also offer smooth performance and intuitive user experiences across all devices. 
+                       From landing pages to interactive web applications, I bring designs to life with clean, maintainable code and a strong eye for detail. 
+                       Whether you're starting from scratch or need a redesign, I can help build a digital presence that truly connects with your audience.</p>
+                </div>
+            </div>
+
+            <div class="service-box">
+                <div class="service-info">
+                    <i class="bx bxs-devices"></i>
+                    <h4>Data Analytics</h4>
+                    <p>I help turn raw data into clear, actionable insights using tools like Excel, Power BI, Tableau, and SQL. 
+                       From cleaning and organizing datasets to building dashboards and uncovering trends, I aim to make data easy to understand and valuable for decision-making.
+                       Whether you're looking to track performance, understand customer behavior, or identify growth opportunities, I can deliver meaningful visualizations and reports that drive results.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+
+        <form action="https://formspree.io/f/xwplglkq" method="POST">
+            <div class="input-group">
+                <div class="input-box">
+                    <input type="text" placeholder="Full Name">
+                    <input type="email" placeholder="Email">
+                </div>
+                <div class="input-box">
+                    <input type="number" placeholder="Phone Number">
+                    <input type="text" placeholder="Subject">
+                </div>
+            </div>
+
+
+            <div class="input-group-2">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                <input type="submit" value="Send Message" class="btn">
+            </div>
+        </form>
+
+
+    </section>
+
+    <footer class="footer">
+        <div class="social-icons">
+                <a href="https://github.com/Palesa-ops">
+                    <i class="bx bxl-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/palesa-radebe-5330232a9/">
+                        <i class="bx bxl-linkedin-square"></i>
+                </a>
+        </div>
+
+        <ul class="list">
+            <li>
+                <a href="#">FAQ</a>
+            </li>
+            <li>
+                <a href="#services">Services</a>
+            </li>
+            <li>
+                <a href="#about">About Me</a>
+            </li>
+            <li>
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+
+        <p class="copyright">© 2025 Palesa Radebe. All rights reserved.
+</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
